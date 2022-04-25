@@ -1,7 +1,7 @@
-t=int(input())
-for i in range(0,t+1) :
-    m,n=map(int,input().split())
-    s=m+n
+t= int(input())
+for i in range(0,t) :
+    s=0
+    a,b=map(int,input().split())
+    s=a+b
     print(s)
-    
     
