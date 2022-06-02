@@ -1,9 +1,8 @@
-n=int(input())
-b=n
-a=1
-while b>0 :
-    for i in range(a,n+1) :
-        print(i,end=" ");
-    print();
-    a=a+1;
-    b=b-1;
+n=int(input())#5
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        if i==j or i==n+1-j:
+            print(n-i+1,end=" ")
+        else:
+            print(" ",end="")
+    print()
