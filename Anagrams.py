@@ -1,19 +1,10 @@
-s=input()
-x=input()
-
-c=v=0
-if len(s)==len(x):
-    for i in x:
-        if i in s or i.upper() in s or i.lower() in s:
-            c+=1
-        else:
-            v=1
-            break
-    if(c==len(x) and v!=1):
-        print(True)
-    else:
+s1=input()
+s2=input()
+s1=s1.lower()
+s2=s2.lower()
+for i in s1:
+    if i not in s2:
         print(False)
+        break
 else:
-    print(False)
-    
-    
+    print(True)
