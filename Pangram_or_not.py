@@ -1,15 +1,9 @@
-s=input()
-arr="abcdefghijklmnopqrstuvwxyz"
-c=v=0
-for i in arr:
-    if i in s or i.upper() in s:
-        c+=1
-    else:
-        v=1
+a=input()
+a=a.lower()
+s='abcdefghijklmnopqrstuvwxyz'
+for i in s:
+    if i not in a:
+        print("False")
         break
-if(v!=1):
-    print(True)
 else:
-    print(False)
-    
-    
+    print("True")
