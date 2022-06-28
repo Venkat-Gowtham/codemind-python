@@ -1,21 +1,19 @@
-n=input()
-z=n.split()
-q="aeiouAEIOU"
-ma=x=0
-for i in z:
-    c=0
+s=list(map(str,input().split()))
+mc=0
+v='aeiouAEIOU'
+for i in s:
+    vc=0
     for j in i:
-        if j in q:
-            c+=1
-    if ma<c:
-        ma=c
-for i in z:
-    c=0
+        if j in v:
+            vc+=1
+    if vc>mc:
+        mc=vc
+c=0
+for i in s:
+    vc=0
     for j in i:
-        if j in q:
-            c+=1
-    if ma==c:
-        x+=1
-print(x)
-    
-        
+        if j in v:
+            vc+=1
+    if vc==mc:
+        c+=1
+print(c)
