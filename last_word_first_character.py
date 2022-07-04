@@ -1,3 +1,5 @@
-a=input()
-arr=list(a.split())
-print(arr[len(arr)-1][0])
+n=input()
+n=n.split()
+x=n[len(n)-1]
+print(x[0])
+       
