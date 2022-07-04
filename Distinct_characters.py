@@ -3,8 +3,7 @@ n=n.lower()
 c=0
 q=""
 for i in n:
-    if i not in q and i!=' ':
+    if i not in q and n.count(i)==1 and i!=' ':
         q+=i
-        c+=1
 x="".join(sorted(q))
 print(x)
