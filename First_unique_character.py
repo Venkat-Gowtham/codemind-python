@@ -1,20 +1,8 @@
-s=input()
-x=len(s)
-c=v=iso=0
-for i in range(x):
-    c=0
-    for j in range(x):
-        if i!=j:
-            if s[i]==s[j]:
-                c+=1
-    if(c==0):
-        print(s[i])
-        iso=2
+n=input()
+for i in n:
+    if n.count(i)==1:
+        print(i)
         break
-    else:
-        iso=1
-if(iso!=2):
+else:
     print(-1)
-
-    
     
