@@ -10,9 +10,9 @@ while i<=j:
         i+=1
         j-=1
         continue
-    if n[i] in v and n[j] not in v:
+    elif n[i] in v and n[j] not in v:
         c+=1
-    elif n[i] not  in v and n[j] in v:
+    elif n[i] not in v and n[j] in v:
         c+=1
     i+=1
     j-=1
