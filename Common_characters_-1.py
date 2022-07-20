@@ -1,16 +1,15 @@
-s=input()
-s=s.lower()
-s=list(s.split())
-f=s[0]
+s1=input().lower()
+s1=s1.split()
+r=s1[0]
 res=[]
-for i in f:
-    for j in s:
+for i in r:
+    for j in s1:
         if i not in j:
             break
     else:
         res.append(i)
-res=''.join(res)
-if len(res)>0:
+if(len(res)>0):
+    res=''.join(res)
     print(res)
 else:
     print(-1)
