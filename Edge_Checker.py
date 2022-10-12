@@ -1,8 +1,8 @@
-n,p=map(int,input().split())
-if(n-p==1 or p-n==1):
+a,b=map(int,input().split())
+if (a==10 and b==1) or (b==10 and a==1):
     print("Yes")
-elif ((n==10 and p==1)or (p==10 and n==1)):
+elif abs(a-b)==1:
     print("Yes")
-else :
+else:
     print("No")
     
